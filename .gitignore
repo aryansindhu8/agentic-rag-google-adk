@@ -1,19 +1,22 @@
-# Environment variables / API keys
-.env
-.env.*
-!.env.example
-
 # Python virtual environments
 venv/
 .venv/
 env/
 ENV/
 
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
 # Python cache
 __pycache__/
 *.py[cod]
 
-# IDE
+# ADK local state
+.adk/
+
+# IDE files
 .vscode/
 .idea/
 
@@ -27,3 +30,4 @@ __MACOSX/
 # Temporary files
 *.tmp
 *.temp
+*~
