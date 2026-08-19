@@ -129,7 +129,8 @@ A PDF is uploaded to the browser interface and the agent is asked a question who
 
 An image is uploaded and the agent is asked questions about its content.
 
-![Image RAG Demonstration](screenshots/rag-image.png)
+![Image RAG Demonstration](screenshots/rag-image1.png)
+![Image RAG Demonstration](screenshots/rag-image2.png)
 
 ### 🎵 Audio RAG
 
@@ -151,7 +152,8 @@ The command-line agent was tested with a code-generation task.
 
 A second command-line prompt was used to evaluate the agent on a technical MapReduce-related question.
 
-![Command Line MapReduce](screenshots/command-line-mapreduce.png)
+![Command Line MapReduce](screenshots/command-line-mapreduce1.png)
+![Command Line MapReduce](screenshots/command-line-mapreduce2.png)
 
 The assignment requires two different command-line prompts and their outputs.
 
