@@ -305,7 +305,8 @@ The browser interface provides the environment used for the RAG demonstrations.
 
 ### Command-Line Prompt 2 — MapReduce
 
-![MapReduce Prompt](screenshots/command-line-mapreduce.png)
+![MapReduce Prompt](screenshots/command-line-mapreduce1.png)
+![MapReduce Prompt](screenshots/command-line-mapreduce2.png)
 
 ### RAG — PDF
 
@@ -313,7 +314,8 @@ The browser interface provides the environment used for the RAG demonstrations.
 
 ### RAG — Image
 
-![Image RAG](screenshots/rag-image.png)
+![Image RAG](screenshots/rag-image1.png)
+![Image RAG](screenshots/rag-image2.png)
 
 ### RAG — Audio
 
