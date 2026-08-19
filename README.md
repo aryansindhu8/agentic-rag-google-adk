@@ -155,6 +155,33 @@ A second command-line prompt was used to evaluate the agent on a technical MapRe
 
 The assignment requires two different command-line prompts and their outputs.
 
+## 🧠 Agent Configuration
+
+The project's root agent is defined in `a/agent.py`.
+
+```python
+from google.adk.agents.llm_agent import Agent
+from google.adk.tools import google_search
+
+root_agent = Agent(
+    model='gemini-2.5-flash',
+    name='root_agent',
+    description='A helpful assistant for user questions.',
+    instruction='Answer user questions to the best of your knowledge',
+    tools=[google_search]
+)
+```
+
+### Agent Components
+
+| Component  | Configuration    |
+| ---------- | ---------------- |
+| Model      | Gemini 2.5 Flash |
+| Agent name | `root_agent`     |
+| Tool       | Google Search    |
+| Framework  | Google ADK       |
+| Language   | Python           |
+
 ## 📁 Project Structure
 
 ```text
@@ -163,15 +190,38 @@ agentic-rag-google-adk/
 ├── README.md
 ├── .gitignore
 ├── .env.example
-├── agent.py
-├── __init__.py
+│
+├── a/
+│   ├── __init__.py
+│   └── agent.py
 │
 └── screenshots/
-    ├── command-line-code-generation.png
-    ├── command-line-mapreduce.png
+    ├── command-line-1.png
+    ├── command-line-2.png
     ├── rag-pdf.png
     ├── rag-image.png
     └── rag-audio.png
+```
+
+> The Python virtual environment is intentionally excluded from the repository. It should be recreated locally using Python and the required packages.
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside the `a/` directory:
+
+```env
+GOOGLE_GENAI_USE_VERTEXAI=0
+GOOGLE_API_KEY=your_google_api_key
+```
+
+> [!IMPORTANT]
+> Never commit the real `.env` file or Google API key to GitHub.
+
+For GitHub, use `.env.example`:
+
+```env
+GOOGLE_GENAI_USE_VERTEXAI=0
+GOOGLE_API_KEY=your_google_api_key_here
 ```
 
 ## ⚙️ Setup
